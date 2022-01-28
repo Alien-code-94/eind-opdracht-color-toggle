@@ -1,6 +1,7 @@
 const togglecolor1 = function() {
   const bodyElement =document.body;
-  bodyElement.classList.toggle("olive-background");
+  bodyElement.classList.add("olive-background");
+  bodyElement.classList.remove('red-background', 'purple-background', 'blue-background', 'grey-background');
   };
   const changeColorButton1 = document.getElementById("olive");
   
@@ -12,7 +13,8 @@ const togglecolor1 = function() {
 
 const togglecolor2 = function() {
   const bodyElement =document.body;
-  bodyElement.classList.toggle("red-background");
+  bodyElement.classList.add("red-background");
+  bodyElement.classList.remove('grey-background', 'purple-background', 'blue-background', 'olive-background');
   };
   const changeColorButton2 = document.getElementById("red");
   
@@ -24,7 +26,8 @@ const togglecolor2 = function() {
     
     const togglecolor3 = function () {
       const bodyElement = document.body;
-      bodyElement.classList.toggle("blue-background");
+      bodyElement.classList.add("blue-background");
+      bodyElement.classList.remove('red-background', 'purple-background', 'grey-background', 'olive-background');
     };
     const changeColorButton3 = document.getElementById("blue");
     
@@ -36,7 +39,9 @@ const togglecolor2 = function() {
 
       const togglecolor4 = function() {
         const bodyElement =document.body;
-        bodyElement.classList.toggle("grey-background");
+        bodyElement.classList.add("grey-background");
+        bodyElement.classList.remove('red-background', 'purple-background', 'blue-background', 'olive-background');
+      
         };
         const changeColorButton4 = document.getElementById("grey");
         
@@ -48,8 +53,10 @@ const togglecolor2 = function() {
 
           const togglecolor5 = function() {
             const bodyElement =document.body;
-            bodyElement.classList.toggle("purple-background");
-            };
+            bodyElement.classList.add("purple-background");
+            bodyElement.classList.remove('red-background', 'grey-background', 'blue-background', 'olive-background');  
+          };
+
             const changeColorButton5 = document.getElementById("purple");
             
              changeColorButton5.addEventListener("click",() => {
